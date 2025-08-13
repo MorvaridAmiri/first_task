@@ -1,0 +1,81 @@
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 500px;
+}
+
+
+/* کادر کلی جدول حذف شود */
+.table-container .ant-table {
+  border: none !important;
+}
+
+/* خطوط عمودی ستون‌ها حذف شود */
+.table-container .ant-table-cell {
+  border-inline-end: none !important;
+}
+
+/* ردیف عنوان ستون‌ها */
+.table-container .ant-table-thead > tr > th {
+  border-bottom: 1px solid black !important;
+  border-top: none !important;
+  background-color: white !important;
+  font-weight: 500;
+}
+
+/* ردیف‌های داده‌ها */
+.table-container .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #d9d9d9 !important; /* خط طوسی زیر هر ردیف */
+  border-inline-end: none !important; /* حذف خط عمودی بین ستون‌ها */
+}
+
+/* حذف خط بالای ردیف اول دیتا */
+.table-container .ant-table-tbody > tr:first-child > td {
+  border-top: none !important;
+}
+
+/* حذف خط عمودی آخرین ستون */
+.table-container .ant-table-thead > tr > th:last-child,
+.table-container .ant-table-tbody > tr > td:last-child {
+  border-inline-end: none !important;
+}
+
+/* پدینگ مناسب برای خوانایی بیشتر */
+.table-container .ant-table-cell {
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* وسط‌چین کردن چک‌باکس‌ها */
+.ant-checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* ظاهر مرتب دکمه‌ها در ستون actions */
+.ant-btn {
+  padding: 2px 6px;
+}
+
+/* محدود کردن عرض داخلی جدول به محتوای واقعی */
+.table-container .ant-table {
+  width: fit-content !important;
+}
+
+/* Tooltip background and text color customization */
+.ant-tooltip-inner {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Tooltip arrow color */
+.ant-tooltip-arrow-content {
+  background-color: #ffffff !important;
+}
+
